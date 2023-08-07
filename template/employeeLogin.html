@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/employeeLogin.css' %}">
+  <title>Login</title>
+  
+</head>
+<body>
+  <div class="login-container">
+    <img src="{% static 'img/employee.png' %}">
+    <h2>Employee Login</h2>
+    <form method="post">
+      {% csrf_token %}
+      
+          <label for="username">Username:</label>
+          <input type="text" class="input-box" name="username" placeholder="employee id" required>
+          <label for="password">Password:</label>
+          <input type="password" class="input-box" name="password" placeholder="Password" required>
+         
+          <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+   <!-- footer section -->
+      <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+          
+       
+        <div class="footer-content">
+
+          <div class="social">
+            <p>Follow our website by Social media</p>
+          </div>
+          
+            <div class="container text-center">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="linkedin"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="skype"></a>
+              <a href="#" class="flickr"></a>
+    
+        </div>
+       <div class="copyright">
+        <p>&copy; 2023 Employee Page. All rights reserved.</p>
+       </div>
+        
+        </div>
+      </section>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+{% comment %} <form method="POST" action="{% url 'employee_details' %}">
+  {% csrf_token %}
+
+  <label for="employee_id">Employee ID:</label>
+  <input type="text" name="employee_id" required>
+  <br><br>
+
+  <label for="first_name">First Name:</label>
+  <input type="text" name="first_name" required>
+  <br><br>
+
+  <label for="last_name">Last Name:</label>
+  <input type="text" name="last_name" required>
+  <br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" required>
+  <br><br>
+
+  <label for="mobile_number">Mobile Number:</label>
+  <input type="text" name="mobile_number" required>
+  <br><br>
+
+  <label for="address">Address:</label>
+  <textarea name="address" required></textarea>
+  <br><br>
+
+  <label for="pincode">Pincode:</label>
+  <input type="text" name="pincode" required>
+  <br><br>
+
+  <label for="start_date">Start Date:</label>
+  <input type="date" name="start_date" required>
+  <br><br>
+
+  <input type="submit" value="Submit">
+</form> {% endcomment %}
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/employeeForm.css' %}">
+        <title> project footer </title>
+        
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+
+  <header>
+    <div class="navbar">
+      <h3>payroll management system</h3>
+    </div>
+
+  </header>  
+  <h1>Add Employee </h1>
+        <div class="container-fluid">
+            
+            <div class="image">
+                <img src="{% static 'img/images.jpeg' %}" width="1000" height="750">
+               
+                
+
+            </div>
+        <div class="text1">
+        
+            <form method="POST" action="{% url 'employee_details' %}">
+              <fieldset>
+                <legend>employee_details</legend>
+            {% csrf_token %}
+          
+            <label for="employee_id">Employee ID:</label>
+            <input type="text" name="employee_id" required>
+            <br><br>
+          
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" required>
+          
+            <br><br>
+
+           <label for="last_name">Last Name:</label>
+           <input type="text" name="last_name" required>
+           <br><br>
+
+           <label for="email">Email:</label>
+           <input type="email" name="email" required>
+           <br><br>
+
+           
+           
+          </fieldset>
+              </div>
+
+        <div class="text2">
+           <fieldset>
+           <label for="address">Address:</label>
+           <textarea name="address" required></textarea>
+           <br><br>
+
+           <label for="mobile_number">Mobile Number:</label>
+           <input type="number" name="mobile_number" required>
+            <br><br>
+
+           <label for="pincode">Pincode:</label>
+           <input type="number" name="pincode" required>
+           <br><br>
+
+
+
+        {% comment %} <label for="base_salary">Base Salary:</label>
+        <input type="number" name="base_salary" min="0" required>
+        <br><br> {% endcomment %}
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" name="start_date" required>
+        <b><br>
+        <br><br>
+
+        
+        
+      </fieldset>
+      <button type="submit" >submit</button>
+      </form>
+
+      </div>
+    </div>
+
+          <!-- footer section -->
+      <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+          
+       
+        <div class="footer-content">
+
+          <div class="social">
+            <p>Follow our website by Social media</p>
+          </div>
+          
+            <div class="container text-center">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="linkedin"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="skype"></a>
+              <a href="#" class="flickr"></a>
+    
+        </div>
+       <div class="copyright">
+        <p>&copy; 2023 Employee Page. All rights reserved.</p>
+       </div>
+        
+        </div>
+      </section>
+      </footer>
+    
+            
+
+    
+  </body>
+</html>

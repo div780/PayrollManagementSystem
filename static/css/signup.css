@@ -1,0 +1,149 @@
+  body {
+    font-family: Arial, sans-serif;
+        background-color: #495057;
+      /* padding: 20px; */
+  }
+
+  h2 {
+      text-align: center;
+      font-size: 30px;
+  }
+
+  .sign-form {
+      background: #fff;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      width: 400px;
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+      margin: 8% auto;
+      border: 1px solid;
+      border-radius: 20px;
+
+  }
+
+  form {
+      max-width: 300px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+      width: 30%;
+  }
+
+  label {
+      font-weight: bold;
+  }
+
+  .input-box {
+      border-radius: 20px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 90%;
+      border: 1px solid #999;
+      outline: none;
+      font-size: 15px;
+  }
+
+  button {
+      color: #fff;
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      font-size: 25px;
+      margin: 10px 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+
+  .signup-btn {
+      background-color: #ff1a1a;
+  }
+  /* footer */
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+  }
+
+  #footer .twitter {
+      background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+  }
+
+  #footer .linkedin {
+      background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+      background-repeat: no-repeat;
+      background-position: -78px 0;
+  }
+
+  #footer .facebook {
+      background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+      background-repeat: no-repeat;
+      background-position: -233px 0;
+  }
+
+  #footer .skype {
+      background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+      background-repeat: no-repeat;
+      background-position: -156px 0;
+  }
+
+  #footer .flickr {
+      background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+      background-repeat: no-repeat;
+      background-position: -310px 0;
+  }
+
+  #footer a {
+      height: 45px;
+      width: 45px;
+      display: inline-block;
+      margin: 10px;
+      border-radius: 1px solid;
+  }
+
+  #footer a:hover {
+      transition: all 0.3s ease-out;
+      -webkit-transition: all 0.3s ease-out;
+  }
+
+  #footer .twitter:hover {
+      background-position: 0 -56px;
+  }
+
+  #footer .facebook:hover {
+      background-position: -233px -56px;
+  }
+
+  #footer .skype:hover {
+      background-position: -156px -56px;
+  }
+
+  #footer .linkedin:hover {
+      background-position: -78px -56px;
+  }
+
+  #footer .flickr:hover {
+      background-position: -310px -56px;
+  }
+
+  .bg-dark-1 {
+      color: #fff;
+      padding: 50px;
+      margin-top: 150px;
+      background-color: #fff;
+      background-image: linear-gradient(225deg, #333 0%, #333 50%, #333 100%);
+
+  }
+
+  .copyright {
+      font-size: 20px;
+  }

@@ -1,0 +1,74 @@
+<!-- employee_list.html -->
+ {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/employeeList.css' %}">
+    <title>Employee List</title>
+</head>
+
+<body>
+    <header>
+    <h1>Employee Details</h1>
+    </header>
+ <div class="section">
+       <table>
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>Contact Number</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Date of Joining</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in employees %}
+                <tr>
+                    <td>{{ employee.employee_id }}</td>
+                    <td>{{ employee.first_name }} {{ employee.last_name }}</td>
+                    <td>{{ employee.email }}</td>
+                    <td>{{ employee.mobile_number }}</td>
+                    <td>{{ employee.address }}</td>
+                    <td>{{ employee.pincode }}</td>
+                    <td>{{ employee.start_date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+ </div>
+
+
+     <!-- footer section -->
+       <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+          
+       
+        <div class="footer-content">
+
+          <div class="social">
+            <p>Follow our website by Social media</p>
+          </div>
+          
+            <div class="container-fluid text-center">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="linkedin"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="skype"></a>
+              <a href="#" class="flickr"></a>
+    
+        </div>
+       <div class="copyright">
+        <p>&copy; 2023 payroll Management System. All rights reserved.</p>
+       </div>
+        
+        </div>
+      </section>
+      </footer>
+</body>
+</html>
+

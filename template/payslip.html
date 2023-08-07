@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Payslip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .payslip-info {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .payslip-info p {
+            margin: 5px 0;
+        }
+        .payslip-info .label {
+            font-weight: bold;
+        }
+        .total-amount {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payslip</h1>
+    <div class="payslip-info">
+        <p class="label">Employee ID:</p>
+        <p>{{ employee.employee_id }}</p>
+    </div>
+    <div class="payslip-info">
+        <p class="label">Name:</p>
+        <p>{{ employee.first_name }} {{employee.last_name}}</p>
+    </div>
+    <div class="payslip-info">
+        <p class="label">Basic Salary:</p>
+        <p>{{ salary.basic_salary }}</p>
+    </div>
+    <div class="payslip-info">
+        <p class="label">Allowances:</p>
+        <p>{{ salary.allowances }}</p>
+    </div>
+    <div class="payslip-info">
+        <p class="label">Deductions:</p>
+        <p>{{ salary.deductions }}</p>
+    </div>
+    <div class="payslip-info">
+        <p class="label">Overtime Pay:</p>
+        <p>{{ salary.overtime_pay }}</p>
+    </div>
+    <div class="payslip-info">
+        <p class="label">Bonuses:</p>
+        <p>{{ salary.bonuses }}</p>
+    </div>
+    <div class="total-amount">
+        <p class="label">Net Salary:</p>
+        <p>{{ salary.net_salary }}</p>
+    </div>
+</body>
+</html>

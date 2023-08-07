@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #495057;
+}
+/* h1{
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+} */
+
+h2 {
+    color: #333;
+}
+
+.login-container {
+
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    padding: 25px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    margin: 8% auto;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+label {
+    color: #333;
+}
+
+.input-box {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+img {
+    width: 30%;
+}
+
+button {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* margin-top: 20px; */
+}
+
+.login-btn {
+    background-color: #ff1a1a;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer .twitter {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#footer .linkedin {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -78px 0;
+}
+
+#footer .facebook {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -233px 0;
+}
+
+#footer .skype {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -156px 0;
+}
+
+#footer .flickr {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -310px 0;
+}
+
+#footer a {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 1px solid;
+}
+
+#footer a:hover {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+#footer .twitter:hover {
+    background-position: 0 -56px;
+}
+
+#footer .facebook:hover {
+    background-position: -233px -56px;
+}
+
+#footer .skype:hover {
+    background-position: -156px -56px;
+}
+
+#footer .linkedin:hover {
+    background-position: -78px -56px;
+}
+
+#footer .flickr:hover {
+    background-position: -310px -56px;
+}
+
+.bg-dark-1 {
+    color: #fff;
+    padding: 50px;
+    margin-top: 150px;
+    background-color: #fff;
+    background-image: linear-gradient(225deg, #333 0%, #333 50%, #333 100%);
+
+}
+
+.copyright {
+    font-size: 20px;
+}

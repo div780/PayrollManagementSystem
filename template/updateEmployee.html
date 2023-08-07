@@ -1,0 +1,86 @@
+<!-- update_employee.html -->
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/updateEmployee.css' %}">
+        <title> project footer </title>
+        
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+
+  <header>
+    <div class="navbar">
+      <h3>payroll management system</h3>
+    </div>
+
+  </header> 
+  <h1>Update Details </h1>
+  <div class="container-fluid">
+            
+            <div class="image">
+                <img src="{% static 'img/employee.jpg' %}" width="1200" height="750">
+               
+                
+
+            </div>
+  <div class="text1"> 
+<form method="post" action=" ">
+       <fieldset>
+    {% csrf_token %}
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" value="{{ employee.email }}">
+    <br><br>
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" id="phone" value="{{ employee.mobile_number }}">
+    <br><br>
+    <label for="address">Address:</label>
+    <input type="text" name="address" id="address" value="{{ employee.address }}">
+    <br><br>
+    <label for="pincode">Pincode:</label>
+    <input type="text" name="pincode" id="pincode" value="{{ employee.pincode }}">
+    <br><br>
+       </fieldset>
+     <button type="submit" >update</button>
+</form>
+</div>
+</div>
+
+    
+            
+
+     <!-- footer section -->
+       <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+          
+       
+        <div class="footer-content">
+
+          <div class="social">
+            <p>Follow our website by Social media</p>
+          </div>
+          
+            <div class="container text-center">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="linkedin"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="skype"></a>
+              <a href="#" class="flickr"></a>
+    
+        </div>
+       <div class="copyright">
+        <p>&copy; 2023 Admin Page. All rights reserved.</p>
+       </div>
+        
+        </div>
+      </section>
+      </footer>
+  </body>
+</html>

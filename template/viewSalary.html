@@ -1,0 +1,76 @@
+ {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/viewSalary.css' %}">
+    <title>Salary Details</title>
+</head>
+<body>
+    <header>
+        <h1>Salary Details</h1>
+    </header>
+  <div class="section">
+      <table>
+        <thead>
+            <tr>
+                <th>Employee Id</th>
+                <th>Basic Salary</th>
+                <th>Allowances</th>
+                <th>Tax</th>
+                <th>Insurance</th>
+                <th>Other Deductions</th>
+                <th>Overtime Pay</th>
+                <th>Bonuses</th>
+                <th>Net Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for sal in salary %}
+                <tr>
+                    <td>{{ sal.employee_id }}</td>
+                    <td>{{ sal.basic_salary }}</td>
+                    <td>{{ sal.allowances }}</td>
+                    <td>{{ sal.tax }}</td>
+                    <td>{{ sal.insurance }}</td>
+                    <td>{{ sal.otherDeductions }}</td>
+                    <td>{{ sal.overtime_pay }}</td>
+                    <td>{{ sal.bonuses }}</td>
+                    <td>{{ sal.net_salary }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+  </div>
+
+      <!-- footer section -->
+       <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+          
+       
+        <div class="footer-content">
+
+          <div class="social">
+            <p>Follow our website by Social media</p>
+          </div>
+          
+            <div class="container text-center">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="linkedin"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="skype"></a>
+              <a href="#" class="flickr"></a>
+    
+        </div>
+       <div class="copyright">
+        <p>&copy; 2023 Payroll management system. All rights reserved.</p>
+       </div>
+        
+        </div>
+      </section>
+      </footer>
+</body>
+</html>

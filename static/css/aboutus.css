@@ -1,0 +1,121 @@
+body{
+    background-color: lightgrey;
+}
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ h2 {
+    font-size: 40px;
+    color: #fff;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    justify-content: center;
+    background-color: #333;
+}
+h3{
+    text-align: center;
+    justify-content: center;
+}
+
+.about-section p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-section li {
+    font-size: 26px;
+    color: #666;
+    margin-bottom: 5px;
+}
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer .twitter {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#footer .linkedin {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -78px 0;
+}
+
+#footer .facebook {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -233px 0;
+}
+
+#footer .skype {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -156px 0;
+}
+
+#footer .flickr {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -310px 0;
+}
+
+#footer a {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 1px solid;
+}
+
+#footer a:hover {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+#footer .twitter:hover {
+    background-position: 0 -56px;
+}
+
+#footer .facebook:hover {
+    background-position: -233px -56px;
+}
+
+#footer .skype:hover {
+    background-position: -156px -56px;
+}
+
+#footer .linkedin:hover {
+    background-position: -78px -56px;
+}
+
+#footer .flickr:hover {
+    background-position: -310px -56px;
+}
+
+.bg-dark-1 {
+    color: #fff;
+    padding: 50px;
+    margin-top: 150px;
+    background-color: #fff;
+    background-image: linear-gradient(225deg, #333 0%, #333 50%, #333 100%);
+
+}
+
+.copyright {
+    font-size: 20px;
+}

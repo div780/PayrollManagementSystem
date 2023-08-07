@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/salaryDetail.css' %}">
+    <title>login</title>
+  </head>
+  <body>
+ <header>
+    <div class="navbar">
+      <h3>payroll management system</h3>
+    </div>
+
+  </header>  
+  <h1>Add Salary Details </h1>
+  <div class="container-fluid">
+            
+            <div class="image">
+                <img src="{% static 'img/salary.jpg' %}" width="1000" height="750">
+            </div>
+
+            <div class="text1">
+<form method="POST" action="">
+  {% comment %} <legend>Salary_details</legend> {% endcomment %}
+  {% csrf_token %}
+   <fieldset>
+  <label for="employee_id">Employee ID:</label>
+  <select name="employee_id" id="employee_id" class="form-control">
+      {% for employee in employees %}
+        <option value="{{ employee.employee_id }}">{{ employee.employee_id }}</option>
+      {% endfor %}
+    </select>
+    <br><br>
+  <label for="basic_salary">Basic Salary:</label>
+  <input type="number" name="basic_salary" id="basic_salary" required>
+  <br><br>
+  <label for="allowances">Allowances:</label>
+  <input type="number" name="allowances" id="allowances">
+   <br><br>
+  <label for="tax">Tax:</label>
+  <input type="number" name="tax" id="tax">
+   <br><br>
+
+   </fieldset>
+  </div>
+
+
+<div class="text2">
+           <fieldset>
+  <label for="insurance">Insurance:</label>
+  <input type="number" name="insurance" id="insurance">
+   <br><br>
+
+  <label for="otherDeductions">Other Deductions:</label>
+  <input type="number" name="otherDeductions" id="otherDeductions">
+   <br><br>
+
+  <label for="overtime_pay">Overtime Pay:</label>
+  <input type="number" name="overtime_pay" id="overtime_pay">
+   <br><br>
+
+  <label for="bonuses">Bonuses:</label>
+  <input type="number" name="bonuses" id="bonuses">
+   <br><br>
+    </fieldset>
+
+  <button type="submit">Submit</button>
+</form>
+    </div>
+</div>
+
+      <!-- footer section -->
+      <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+          
+       
+        <div class="footer-content">
+
+          <div class="social">
+            <p>Follow our website by Social media</p>
+          </div>
+          
+            <div class="container text-center">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="linkedin"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="skype"></a>
+              <a href="#" class="flickr"></a>
+    
+        </div>
+       <div class="copyright">
+        <p>&copy; 2023 Employee Page. All rights reserved.</p>
+       </div>
+        
+        </div>
+      </section>
+      </footer>
+</body>
+
+</html>

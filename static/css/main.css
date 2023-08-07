@@ -1,0 +1,183 @@
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+/* Navigation Bar Css */
+
+
+ul {
+    list-style-type: none;
+    margin-left: auto;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+
+}
+
+header {
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+    display: inline-flex;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}
+
+/* Payroll Management System haeding Css */
+.heading {
+    text-align: center;
+    /* background-image: url("Image1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 60px;
+    color: #eeeeee;
+
+
+}
+
+#content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+#Img {
+
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.container-fluid {
+    margin-top: 0px;
+
+}
+
+p {
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/* Footer css */
+
+
+
+
+/* .social{
+  
+  margin-top: 0px;
+  font-size: 30px;
+  margin-left: 450px;
+  position: absolute;
+} */
+
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer .twitter {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#footer .linkedin {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -78px 0;
+}
+
+#footer .facebook {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -233px 0;
+}
+
+#footer .skype {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -156px 0;
+}
+
+#footer .flickr {
+    background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -310px 0;
+}
+
+#footer a {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 1px solid;
+}
+
+#footer a:hover {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+#footer .twitter:hover {
+    background-position: 0 -56px;
+}
+
+#footer .facebook:hover {
+    background-position: -233px -56px;
+}
+
+#footer .skype:hover {
+    background-position: -156px -56px;
+}
+
+#footer .linkedin:hover {
+    background-position: -78px -56px;
+}
+
+#footer .flickr:hover {
+    background-position: -310px -56px;
+}
+
+.bg-dark-1 {
+    color: #fff;
+    padding: 50px;
+    margin-top: 150px;
+    background-color: #fff;
+    background-image: linear-gradient(225deg, #333 0%, #333 50%, #333 100%);
+
+}
+
+.copyright {
+    font-size: 25px;
+}
+
+marquee {
+    position: absolute;
+}

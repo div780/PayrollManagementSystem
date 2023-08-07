@@ -1,0 +1,56 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <title>login</title>
+  </head>
+  <body>
+   {% comment %} <h1>payroll management system</h1> {% endcomment %}
+      <div class="login-container">
+        
+      <img src="{% static 'img/login.png' %}">
+        <h2>Login</h2>
+        <form method="post">
+          {% csrf_token %}<br>
+
+          <label for="username">Username:</label>
+          <input type="text" class="input-box" name="username" placeholder="Username" required>
+          <label for="password">Password:</label>
+          <input type="password" class="input-box" name="password" placeholder="Password" required>
+         
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+      </div>
+       <!-- footer section -->
+       <footer class="bg-dark-1">
+        <section id="footer" class="py-5">
+          
+       
+        <div class="footer-content">
+
+          <div class="social">
+            <p>Follow our website by Social media</p>
+          </div>
+          
+            <div class="container text-center">
+              <a href="#" class="twitter"></a>
+              <a href="#" class="linkedin"></a>
+              <a href="#" class="facebook"></a>
+              <a href="#" class="skype"></a>
+              <a href="#" class="flickr"></a>
+    
+        </div>
+       <div class="copyright">
+        <p>&copy; 2023 payroll management system. All rights reserved.</p>
+       </div>
+        
+        </div>
+      </section>
+      </footer>
+    
+  </body>
+</html>
